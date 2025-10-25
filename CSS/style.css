@@ -417,3 +417,153 @@ body {
 
 
 
+
+
+
+
+
+/* ====== 🧩 MEDIA QUERIES ====== */
+
+/* 🌐 TABLETTES (max-width: 992px) */
+@media (max-width: 992px) {
+
+  /* Navbar principale */
+  .main-navbar {
+    grid-template-columns: 1fr auto;
+    padding: 14px 30px;
+  }
+
+  .main-navbar .nav-links {
+    gap: 25px;
+  }
+
+  .main-navbar .logo img {
+    height: 100px;
+  }
+
+  /* Section coordonnées */
+  .contact-infos {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+  }
+
+  .info-card {
+    width: 45%;
+    padding: 30px;
+  }
+
+  /* Formulaire */
+  .formulaire {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  /* Section héro */
+  .contact-hero {
+    height: 50vh;
+  }
+
+  .contact-overlay {
+    padding: 40px 20px;
+    max-width: 90%;
+  }
+
+  .contact-overlay h1 {
+    font-size: 32px;
+  }
+
+  .contact-overlay p {
+    font-size: 16px;
+  }
+}
+
+/* 📱 MOBILES (max-width: 600px) */
+@media (max-width: 600px) {
+
+  /* Navbar principale */
+  .main-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .main-navbar .logo img {
+    height: 80px;
+  }
+
+  .main-navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-buttons {
+    margin: 0;
+  }
+
+  .btn-blue {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Héro */
+  .contact-hero {
+    height: 45vh;
+    background-position: center;
+  }
+
+  .contact-overlay h1 {
+    font-size: 26px;
+  }
+
+  .contact-overlay p {
+    font-size: 14px;
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Coordonnées */
+  .contact-infos {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .info-card {
+    width: 80%;
+    padding: 25px;
+  }
+
+  /* Formulaire */
+  .formulaire {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .formulaire input,
+  .formulaire textarea {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .btn-envoyer {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* Footer */
+  .footer-bottom {
+    font-size: 12px;
+    padding: 18px 10px;
+  }
+}
