@@ -156,7 +156,7 @@ body {
 /* ===== FORMULAIRE DE CONTACT ===== */
 .contact-form {
   position: relative;
-  background: url("../IMG/contactForm.png") center/cover no-repeat;
+  background: url("../IMG/contactFOrm.png") center/cover no-repeat;
   padding: 100px 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -237,96 +237,4 @@ body {
   background-color: #fff;
   color: #0A2342;
   transform: translateY(-2px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== COORDONNÉES ===== */
-.contact-infos {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 40px;
-  background: linear-gradient(180deg, #f4f6f8 0%, #e9edf2 100%);
-  padding: 80px 0;
-}
-
-.info-card {
-  background: #ffffff;
-  border-radius: 14px;
-  text-align: center;
-  padding: 40px 50px;
-  width: 300px;
-  box-shadow: 0 8px 25px rgba(10, 35, 66, 0.12);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(10, 35, 66, 0.1);
-}
-
-.info-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(10, 35, 66, 0.18);
-  background: #fdfdfd;
-}
-
-.info-card h3 {
-  color: #0A2342;
-  margin-bottom: 12px;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
-
-.info-card p,
-.info-card a {
-  color: #333;
-  font-size: 16px;
-  text-decoration: none;
-  line-height: 1.6;
-}
-
-.info-card a:hover {
-  color: #0A2342;
-  text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== FOOTER ===== */
-.footer {
-  background-color: #0A2342;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  margin-top: 80px;
-}
-.footer-bottom {
-  text-align: center;
-  padding: 25px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  font-size: 14px;
-  background-color: #09233d;
-  letter-spacing: 0.3px;
 }
