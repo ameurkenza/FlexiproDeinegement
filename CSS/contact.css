@@ -6,10 +6,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0A2342; /* Bleu nuit professionnel */
+  background-color: #0A2342;
   color: #ffffff;
   text-align: center;
-  padding: 8px 0; /* plus fin */
+  padding: 8px 0;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -18,7 +18,6 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Liens */
 .top-navbar a {
   color: #FFD84D;
   text-decoration: none;
@@ -29,43 +28,39 @@
   text-decoration: underline;
 }
 
-/* Évite le chevauchement avec la première barre */
 body {
   margin: 0;
-  padding-top: 45px; /* plus serré pour ajuster la hauteur */
+  padding-top: 45px;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
-
-
 
 /* =============================== */
 /* ===== NAVBAR PRINCIPALE ===== */
 /* =============================== */
 .main-navbar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr; /* logo / liens / bouton */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #F3F3F3;
-  padding: 4px 30px; /* réduit pour un look plus compact */
+  padding: 8px 25px;
   border-bottom: 1px solid #D0D0D0;
   position: sticky;
-  top: 45px; /* pile sous la top-navbar */
+  top: 45px;
   z-index: 999;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Logo */
 .main-navbar .logo img {
-  height: 120px; /* réduit pour correspondre à ta page principale */
+  height: 90px;
   width: auto;
 }
 
-/* Liens */
 .main-navbar .nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 35px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -83,16 +78,15 @@ body {
   color: #0A2342;
 }
 
-/* Bouton bleu */
 .nav-buttons {
-  justify-self: end;
-  margin-right: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .btn-blue {
   background-color: #0A2342;
   color: #FFFFFF;
-  padding: 10px 24px; /* plus fin */
+  padding: 10px 22px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
@@ -108,11 +102,9 @@ body {
   transform: translateY(-2px);
 }
 
-
-
-
-
+/* =============================== */
 /* ===== SECTION HERO CONTACT ===== */
+/* =============================== */
 .contact-hero {
   position: relative;
   background: url("../IMG/contactUS.png") center/cover no-repeat;
@@ -122,7 +114,6 @@ body {
   align-items: center;
   color: white;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .contact-overlay {
@@ -161,20 +152,17 @@ body {
   transform: translateY(-2px);
 }
 
-
-
-
-
+/* =============================== */
 /* ===== SECTION COORDONNÉES ===== */
+/* =============================== */
 .contact-infos {
   display: flex;
   justify-content: center;
   align-items: stretch;
   gap: 40px;
   padding: 100px 60px;
-  background-color: #F7F9FB; /* fond clair doux */
-  font-family: "Poppins", sans-serif;
-  flex-wrap: wrap; /* pour mobile */
+  background-color: #F7F9FB;
+  flex-wrap: wrap;
 }
 
 .info-card {
@@ -182,11 +170,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   padding: 40px 30px;
-  flex: 1 1 280px; /* responsive automatique */
+  flex: 1 1 280px;
   max-width: 350px;
   text-align: center;
   transition: all 0.3s ease;
-  border-top: 5px solid #FFD84D; /* ligne jaune élégante */
+  border-top: 5px solid #FFD84D;
 }
 
 .info-card:hover {
@@ -195,7 +183,7 @@ body {
 }
 
 .info-card h3 {
-  color: #0A2342; /* ton bleu marine */
+  color: #0A2342;
   font-size: 22px;
   margin-bottom: 10px;
   font-weight: 600;
@@ -215,49 +203,25 @@ body {
 }
 
 .info-card a:hover {
-  color: #FFD84D; /* jaune au survol */
+  color: #FFD84D;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =============================== */
 /* ===== FORMULAIRE DE CONTACT ===== */
-/* ===== FORMULAIRE DE CONTACT ===== */
+/* =============================== */
 .contact-form {
   position: relative;
   background: url("../IMG/contactFOrm.png") center/cover no-repeat;
   padding: 100px 0;
   text-align: center;
-  font-family: "Poppins", sans-serif;
   color: white;
 }
 
 .contact-form::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(10, 35, 66, 0.7); /* superposition bleu nuit semi-transparente */
+  inset: 0;
+  background: rgba(10, 35, 66, 0.7);
   z-index: 0;
 }
 
@@ -268,7 +232,6 @@ body {
   z-index: 1;
 }
 
-/* ===== Forme et style du formulaire ===== */
 .formulaire {
   max-width: 800px;
   margin: 0 auto;
@@ -326,27 +289,14 @@ body {
   transform: translateY(-2px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =============================== */
 /* ===== FOOTER ===== */
+/* =============================== */
 .footer {
-  background-color: #0A2342; /* ton bleu principal */
+  background-color: #0A2342;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  margin-top: 80px; /* espace au-dessus du footer */
+  margin-top: 80px;
 }
 
 .footer-bottom {
@@ -354,10 +304,116 @@ body {
   padding: 25px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 14px;
-  background-color: #09233d; /* un peu plus sombre pour du contraste */
+  background-color: #09233d;
   letter-spacing: 0.3px;
 }
 
+/* =============================== */
+/* ===== RESPONSIVE ===== */
+/* =============================== */
 
+/* Tablettes */
+@media (max-width: 992px) {
+  .main-navbar {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
 
+  .main-navbar .logo img {
+    height: 80px;
+  }
 
+  .main-navbar .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact-hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .contact-overlay {
+    padding: 40px 25px;
+  }
+
+  .contact-infos {
+    padding: 60px 30px;
+    gap: 25px;
+  }
+
+  .formulaire {
+    padding: 30px 25px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .top-navbar {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+
+  .main-navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .main-navbar .logo img {
+    height: 70px;
+  }
+
+  .main-navbar .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-blue {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-hero {
+    height: auto;
+    padding: 60px 20px;
+    background-position: top;
+  }
+
+  .contact-overlay h1 {
+    font-size: 26px;
+  }
+
+  .contact-overlay p {
+    font-size: 15px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .contact-infos {
+    padding: 50px 20px;
+  }
+
+  .info-card {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .btn-envoyer {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+}
