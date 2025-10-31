@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nos Services | Groupe Flexipro</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Import de la police -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lien vers le CSS -->
+  <link rel="stylesheet" href="css/services.css">
 </head>
+
 <body>
 
   <!-- ===== NAVBAR DE CONTACT ===== -->
@@ -18,10 +24,90 @@
     </p>
   </header>
 
+  <!-- ===== NAVBAR PRINCIPALE ===== -->
+  <nav class="main-navbar">
+    <div class="logo">
+      <img src="IMG/logo (2).png" alt="Logo Groupe Flexipro">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a href="soumission.html" class="btn-blue">Obtenez une soumission</a>
+    </div>
+  </nav>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
   <main>
-    <h1>Nos Services</h1>
-    <p>Contenu de la page...</p>
-  </main>
+  <section class="services-flexipro">
+    <h1>Nos services</h1>
+
+    <!-- Texte simple sans encadrement -->
+    <div class="service-description">
+      <p>
+        Chez <strong>Groupe Flexipro</strong>, le déneigement résidentiel, c’est bien plus qu’un simple service &mdash;
+        c’est un engagement envers votre confort et votre sécurité.
+      </p>
+
+      <p>
+        Dès les premières chutes de neige, notre équipe intervient rapidement pour dégager vos stationnements, entrées,
+        trottoirs et allées. Nous utilisons des équipements performants et adaptés aux surfaces résidentielles afin
+        d’éviter tout dommage à votre pavé ou vos bordures.
+      </p>
+
+      <p>
+        Nos tournées sont planifiées selon les conditions météo pour garantir des passages réguliers, efficaces et
+        ponctuels, même durant les tempêtes.
+      </p>
+
+      <p>
+        Avec <strong>Flexipro</strong>, vous profitez d’un hiver sans stress&nbsp;: des accès toujours dégagés, un
+        service humain et fiable, et la certitude que votre résidence est entre de bonnes mains.
+      </p>
+    </div>
+
+    <!-- LES 4 CARTES -->
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">🧹</div>
+        <h3>Déneigement manuel</h3>
+        <p>Enlèvement soigné de la neige dans les zones délicates — escaliers, trottoirs et petits accès.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🧂</div>
+        <h3>Épandage d’abrasif</h3>
+        <p>Application de sel et sable pour prévenir les glissades et garder vos accès sécuritaires.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📲</div>
+        <h3>Service d’alerte automatisée</h3>
+        <p>Recevez une notification avant chaque intervention pour planifier vos déplacements sereinement.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🚛</div>
+        <h3>Transport de neige</h3>
+        <p>Évacuation rapide et efficace de la neige accumulée pour libérer vos stationnements et allées.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- ===== PIED DE PAGE ===== -->
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2025 Groupe Flexipro — Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+
 
 </body>
 </html>

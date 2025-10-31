@@ -1,0 +1,232 @@
+/* =============================== */
+/* ===== NAVBAR DE CONTACT ===== */
+/* =============================== */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0A2342; /* Bleu nuit professionnel */
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0; /* plus fin */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.top-navbar a {
+  color: #FFD84D;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-navbar a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding-top: 45px; /* espace pour la top-navbar */
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f9fb;
+}
+
+/* =============================== */
+/* ===== NAVBAR PRINCIPALE ===== */
+/* =============================== */
+.main-navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background-color: #F3F3F3;
+  padding: 4px 30px;
+  border-bottom: 1px solid #D0D0D0;
+  position: sticky;
+  top: 45px;
+  z-index: 999;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.main-navbar .logo img {
+  height: 120px;
+  width: auto;
+}
+
+/* Liens */
+.main-navbar .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar .nav-links a {
+  color: #0E0E0E;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-navbar .nav-links a:hover,
+.main-navbar .nav-links .active {
+  color: #0A2342;
+}
+
+/* Bouton bleu */
+.nav-buttons {
+  justify-self: end;
+  margin-right: 40px;
+}
+
+.btn-blue {
+  background-color: #0A2342;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(10, 35, 66, 0.2);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-blue:hover {
+  background-color: #113B72;
+  box-shadow: 0 6px 14px rgba(10, 35, 66, 0.3);
+  transform: translateY(-2px);
+}
+
+/* =============================== */
+/* ===== SECTION À PROPOS ===== */
+/* =============================== */
+.about-flexipro {
+  background-image: url("../IMG/imageServices.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 40px;
+  overflow: hidden;
+}
+
+.about-flexipro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+}
+
+.about-container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container h1 {
+  color: #0A2342;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-container p {
+  color: #0A2342;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.about-container h2 {
+  color: #0A2342;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.about-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 40px;
+  text-align: left;
+  max-width: 700px;
+}
+
+.about-container li {
+  font-size: 17px;
+  color: #0A2342;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.about-container strong {
+  color: #0A2342;
+}
+
+/* =============================== */
+/* ===== FOOTER ===== */
+/* =============================== */
+.footer {
+  background-color: #0A2342; /* Bleu nuit */
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+  position: relative;
+  z-index: 5;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+  background-color: #09233d; /* plus foncé pour contraste */
+  letter-spacing: 0.3px;
+}
+
+/* =============================== */
+/* ===== RESPONSIVE ===== */
+/* =============================== */
+@media (max-width: 992px) {
+  .main-navbar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 20px;
+  }
+
+  .main-navbar .logo img {
+    height: 90px;
+  }
+
+  .about-flexipro {
+    padding: 80px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-flexipro {
+    padding: 60px 20px;
+  }
+
+  .about-container h1 {
+    font-size: 28px;
+  }
+
+  .about-container p {
+    font-size: 15px;
+  }
+
+  .about-container h2 {
+    font-size: 22px;
+  }
+}
