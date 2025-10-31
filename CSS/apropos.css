@@ -52,13 +52,13 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Logo */
+
 .main-navbar .logo img {
   height: 90px;
   width: auto;
 }
 
-/* Liens */
+
 .main-navbar .nav-links {
   list-style: none;
   display: flex;
@@ -81,7 +81,7 @@ body {
   color: #0A2342;
 }
 
-/* Bouton */
+
 .nav-buttons {
   display: flex;
   align-items: center;
